@@ -1,0 +1,487 @@
+<div class="main-page">
+    <div class="row px-2">
+        <div class="col-xl-5">
+            <div class="text-start" class="user-profile d-flex flex-column">
+                <div class="d-flex">
+                    <img src="assets/default.jpg">
+                    <div class="user-details  ms-3 d-flex flex-column justify-content-center">
+                        <div class="name">
+                            Gabriel Alexandru Botas
+                        </div>
+                        <div class="job-position">
+                            C.E.O Erreme Software Development
+                        </div>
+                        <div class="other mt-2">
+                            <div class="identificator mb-1">
+                                <i class="fas fa-fingerprint me-2"></i>871890
+                            </div>
+                            <div class="email ">
+                                <i class="fas fa-envelope me-2"></i>an_email@gmail.com
+                            </div>
+                            <div class="phone mt-1">
+                                <i class="fas fa-phone me-2"></i>+34 123 12 12 21
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-links mt-4 ">
+                    <ul class="d-flex flex-column m-0 p-0">
+                        <li (click)="slider('news')">
+                            Noticias
+                            <i class="fas fa-circle ms-2"></i>
+                        </li>
+                        <li (click)="slider('notifications')">
+                            Notificaciones <i class="fas fa-circle ms-2"></i>
+                        </li>
+                        <li (click)="slider('calendary')">Calendario</li>
+                        <li (click)="slider('quick-signing')">
+                            Fichaje Rápido
+                        </li>
+                        <li (click)="slider('vacation')">Vacaciones </li>
+                        <li (click)="slider('profile-details')">Detalles del Perfil</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-7  ps-2">
+            <div class="row ps-3 h-50">
+                <div class="col-md-12  px-0">
+                    <h5>Tareas</h5>
+                </div>
+                <div class="col-md-12  px-0">
+                    <h5>Accesos Directos</h5>
+                </div>
+            </div>
+            <div class="row ps-3 mt-4 h-50">
+                <div class="col-md-12  px-0">
+                    <h5>Registros de Entrada y Salida</h5>
+                    <div class="border rounded border-2 px-4 py-2">
+                        <div class="date-selector">
+                            <form class="w-25">
+                                <input class="form-control" type="date" />
+                            </form>
+                        </div>
+                        <div class="register d-flex mt-3 sc1 px-0 pb-3 overflow-auto">
+                            <div class="entry p-3 ">
+                                <div class="hour">08:21</div>
+                                <div class="title">Entrada</div>
+                            </div>
+                            <div class="exit p-3 ">
+                                <div class="hour">14:21</div>
+                                <div class="title">Salida</div>
+                            </div>
+                            <div class="entry p-3 ">
+                                <div class="hour">15:30</div>
+                                <div class="title">Entrada</div>
+                            </div>
+                            <div class="exit p-3 ">
+                                <div class="hour">18:30</div>
+                                <div class="title">Salida</div>
+                            </div>
+                            <div class="exit p-3 ">
+                                <div class="hour">18:30</div>
+                                <div class="title">Salida</div>
+                            </div>
+                            <div class="exit p-3 ">
+                                <div class="hour">18:30</div>
+                                <div class="title">Salida</div>
+                            </div>
+                            <div class="exit p-3 ">
+                                <div class="hour">18:30</div>
+                                <div class="title">Salida</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4 px-2">
+        <div class="col-12 ">
+            <h5>Proyectos Asignados</h5>
+            <div class="border border-2 rounded p-1 projects-asigned row">
+                <div class="col-lg-2 p-1 ">
+                    <div class="project position-relative">
+                        <div class="position-absolute start-50 top-50 translate-middle">
+                            <div class="icon text-center">
+                                <svg stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4409 9.12717L11.0322 14.7618L15.9626 21.1008" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.3278 18.2835L8.21484 21.1008" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M8.21484 13.3532C8.21484 9.40889 11.0323 9.12714 12.4409 9.12717L13.8494 9.12714C14.0842 10.301 15.1172 12.7897 17.3711 13.3531"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M13 7C14.1046 7 15 6.10457 15 5C15 3.89543 14.1046 3 13 3C11.8954 3 11 3.89543 11 5C11 6.10457 11.8954 7 13 7Z"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="title text-center mt-2">Excursión a Peñalara</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white   slider close news">
+    <div class="p-2">
+        <div class="close-button">
+            <div class="m-2">
+                <i class="fas fa-times p-2" (click)="slider('news')"></i>
+            </div>
+        </div>
+        <div class="slider-body mx-2 my-1">
+            <div class="title">
+                Noticias
+            </div>
+            <div class="row">
+                <div class="col-md-6 overflow-auto">
+                    <div class="news-group d-flex flex-wrap align-items-center">
+                        <div class="nw m-1">
+                            <div class="icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+
+                            <div class="mt-2">
+                                Puente del Pilar
+                            </div>
+                            <div class="date mt-2">
+                                07.10.2021
+                            </div>
+                        </div>
+                        <div class="nw m-1">
+                            <div class="icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <div class="mt-2">
+                                ¡Felicidades Gabriel Alexandru Botas!
+                            </div>
+                            <div class="date mt-2">
+                                27.09.2021
+                            </div>
+                        </div>
+                        <div class="nw m-1">
+                            <div class="icon">
+                                <i class="fas fa-question"></i>
+                            </div>
+                            <div class="mt-2">
+                                Actualización 1.2
+                            </div>
+                            <div class="date mt-2">
+                                12.09.2021
+                            </div>
+                        </div>
+                        <div class="nw m-1">
+                            <div class="icon">
+                                <i class="fas fa-question"></i>
+                            </div>
+                            <div class="mt-2">
+                                Actualización 1.1
+                            </div>
+                            <div class="date mt-2">
+                                09.08.2021
+                            </div>
+                        </div>
+                        <div class="nw m-1">
+                            <div class="icon">
+                                <i class="fas fa-question"></i>
+                            </div>
+                            <div class="mt-2">
+                                Actualización 1.0
+                            </div>
+                            <div class="date mt-2">
+                                12.06.2021
+                            </div>
+                        </div>
+                        <div class="nw m-1">
+                            <div class="icon">
+                                <i class="far fa-circle"></i>
+                            </div>
+                            <div class="mt-2">
+                                Conferencia New Talent Erreme Software Development
+                            </div>
+                            <div class="date mt-2">
+                                02.03.2021
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 information">
+                    <div class="contenido border p-2">
+                        <div class="title">
+                            <div class="date">07.10.2021</div>
+                            <div class="name">Puente del Pilar</div>
+                        </div>
+                        <div class="text  h-100 overflow-auto mt-2">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Enim hic perspiciatis
+                            officia odio iusto non animi nisi similique repellendus deleniti, culpa earum laudantium ex
+                            esse, distinctio quae quibusdam? Aliquid, tempora!
+                            Quam rerum magni quia laudantium, aspernatur aliquid necessitatibus qui illum facilis eaque
+                            pariatur dolores animi voluptas sed quod ad, deleniti exercitationem blanditiis. Illo,
+                            voluptas.
+                            Fuga animi dolorem saepe distinctio accusantium!
+                            Officia, aliquid necessitatibus. Possimus cupiditate corrupti, impedit pariatur ratione
+                            fugiat
+                            modi sed officiis suscipit facilis aut fuga necessitatibus voluptates enim similique odio
+                            dignissimos, quod reprehenderit vel consequatur? Tenetur, totam temporibus?</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="accordion mt-2 sc1" id="accordionNews">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headerOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Nuevas Funcionalidades en Ajustes
+                        </button>
+
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headerOne"
+                        data-bs-parent="#accordionNews">
+                        <div class="accordion-body">
+                            <div class="date">
+                                09.12.2021
+                            </div>
+                            <div class="content mt-2">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis rem vel earum animi,
+                                a
+                                et
+                                cum necessitatibus iusto inventore similique saepe neque voluptas tempore ratione
+                                praesentium, dolores, consectetur odio recusandae?
+                                A, aliquid aperiam minima illo praesentium dignissimos ea nihil ad quibusdam
+                                architecto,
+                                tenetur quia reiciendis mollitia molestiae ducimus earum quae quidem. Quos eligendi,
+                                vitae
+                                dolorem distinctio quam ea dolor exercitationem.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headerTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Modificación en Diseño de Portal Empleado
+                        </button>
+
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headerTwo"
+                        data-bs-parent="#accordionNews">
+                        <div class="accordion-body">
+                            <div class="date">
+                                02.05.2021
+                            </div>
+                            <div class="content mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse
+                                laboriosam,
+                                praesentium cumque ducimus non error, culpa totam maxime, itaque ipsum quo voluptas
+                                consequuntur maiores eius accusamus explicabo nihil blanditiis!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headerThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Fichaje Rápido
+                        </button>
+
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headerThree"
+                        data-bs-parent="#accordionNews">
+                        <div class="accordion-body ">
+                            <div class="date">
+                                10.01.2021
+                            </div>
+                            <div class="content mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dignissimos
+                                consequatur cum nam provident, perferendis aperiam incidunt a recusandae placeat.
+                                Tempore rem cumque corrupti quos soluta doloremque aliquid quod fugit.
+                                Tempore temporibus quia sit quod sint placeat ab. Doloremque alias autem repellat
+                                distinctio voluptatum ullam voluptatem, facere, voluptate totam perferendis eveniet
+                                earum, ipsum recusandae possimus beatae molestias nemo sit itaque?
+                                Voluptates aliquam necessitatibus tempora maxime itaque ipsam magnam aut amet, quod
+                                recusandae placeat incidunt sed molestias animi tenetur consequatur molestiae qui
+                                esse
+                                quasi nam, reiciendis pariatur! Delectus iusto odit praesentium!
+                                Soluta dicta est, illum voluptatem accusantium maxime minus, ullam magni provident
+                                suscipit quibusdam nostrum eius enim fugiat fugit et odit, reiciendis ut harum
+                                veritatis
+                                labore quos amet quam. Possimus, nostrum?
+                                Doloremque iure eos aliquid praesentium commodi deleniti impedit, soluta voluptates
+                                fugiat quis ipsum quod maiores totam! Maiores illum sint repudiandae vitae!
+                                Repudiandae
+                                possimus quia quo quod perferendis dolor iusto aut.
+                                Dolor dolores amet quis alias quae iure, beatae excepturi dolorem praesentium minima
+                                voluptate! Consectetur asperiores accusamus quaerat quia dolorem porro repellat quam
+                                magni inventore! Repellendus ullam reiciendis minima dolorem perferendis!
+                                Exercitationem est obcaecati ducimus nesciunt, suscipit, asperiores molestias dicta
+                                possimus perspiciatis, incidunt maxime rerum veniam. Dolor architecto velit facere
+                                iusto
+                                accusamus mollitia molestias explicabo impedit eius! Illo facilis veniam porro.
+                                Tempora, esse at nesciunt nulla voluptate totam magni optio quis omnis dignissimos
+                                temporibus velit sit deleniti consequuntur cupiditate rerum excepturi nostrum
+                                corrupti
+                                autem blanditiis quae? Sapiente quod laudantium rerum soluta!
+                                Ratione, iusto? Aperiam consequuntur ea, sed laudantium adipisci saepe inventore
+                                animi
+                                iste, cum quidem totam repudiandae molestiae iure quia odit rerum vel quas ducimus
+                                explicabo. Fugit aperiam explicabo maxime temporibus?
+                                Quisquam rem error at animi officia omnis alias, atque tempora cum qui in reiciendis
+                                eos
+                                perspiciatis, voluptatem totam nulla. Commodi repellat ab iusto numquam eligendi
+                                adipisci id cum, rem sit!
+                                Tempore corporis, autem pariatur quia omnis nemo molestiae saepe voluptate. Id
+                                pariatur,
+                                sint reiciendis qui vel deserunt, quisquam beatae reprehenderit cumque dolorum
+                                eligendi,
+                                sunt quasi obcaecati! Sit repellendus dolorem atque.
+                                Tenetur inventore ex deleniti obcaecati harum vitae at cumque! Provident unde
+                                cupiditate
+                                quia eius laborum quo ut nulla repudiandae, sunt placeat, autem odio quas aliquid
+                                molestias possimus, sapiente perspiciatis veritatis.
+                                Vero deleniti dignissimos, quas harum fuga sunt dolores aperiam totam debitis
+                                assumenda
+                                porro distinctio, corporis id voluptate, unde illum tenetur aliquid velit fugit?
+                                Exercitationem ducimus earum delectus, incidunt asperiores suscipit?
+                                Quo similique molestiae, hic accusantium possimus nemo, soluta exercitationem
+                                aperiam
+                                voluptas rem architecto earum tempora odit illum rerum! Facere molestiae nemo
+                                praesentium incidunt nam ut reiciendis fuga aliquam non deserunt.
+                                Quas eos ab vero hic. Itaque recusandae placeat officiis nostrum natus nisi. Beatae
+                                ut
+                                corporis delectus rem cum explicabo doloribus, sint a. Placeat facilis eius
+                                accusantium,
+                                deserunt nostrum minus deleniti.
+                                In odit optio architecto officiis deserunt voluptates quis maiores doloribus, iste
+                                blanditiis sit unde libero cum et, accusantium quibusdam dolorum nesciunt natus
+                                labore
+                                repellat modi? Doloremque quod temporibus doloribus tenetur!
+                                Sint adipisci odit vitae vero minus quisquam nisi cupiditate nemo molestiae
+                                temporibus
+                                nostrum, praesentium rem vel pariatur aperiam asperiores quos nulla, beatae
+                                doloremque
+                                quis voluptates sequi, unde nobis. Corrupti, error.
+                                Assumenda ex et architecto est quod. Commodi dolorem porro quam enim repudiandae
+                                reiciendis eligendi, cumque dicta quia doloribus nobis odio, quis voluptate et velit
+                                magni beatae! Maxime autem in placeat?
+                                Eligendi adipisci quos architecto ipsum molestias, exercitationem saepe iusto quo,
+                                odit
+                                cum quam numquam ratione vitae sint. Consequuntur vitae hic nostrum aliquam tenetur
+                                aut
+                                ratione quos ipsum, unde repellat. Facere.
+                                Eveniet, aperiam nulla, nemo nobis, id unde ratione soluta pariatur culpa voluptatum
+                                quisquam iste atque. Nemo molestias labore quaerat? Sunt nulla non magni itaque?
+                                Laudantium quo at itaque adipisci corporis!</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white   slider close notifications">
+    <div class="p-2">
+        <div class="close-button">
+            <div class="m-2 ">
+                <i class="fas fa-times p-2" (click)="slider('notifications')"></i>
+            </div>
+        </div>
+        <div class="slider-body m-2">
+            <div class="title">
+                Notificaciones
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bg-white   slider close calendary">
+    <div class="p-2">
+        <div class="close-button">
+            <div class="m-2 ">
+                <i class="fas fa-times p-2" (click)="slider('calendary')"></i>
+            </div>
+        </div>
+        <div class="slider-body m-2">
+            <div class="title">
+                Calendario
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bg-white   slider close quick-signing">
+    <div class="p-2">
+        <div class="close-button">
+            <div class="m-2 ">
+                <i class="fas fa-times p-2" (click)="slider('quick-signing')"></i>
+            </div>
+        </div>
+        <div class="slider-body m-2">
+            <div class="title">
+                Fichaje Rápido
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bg-white   slider close vacation">
+    <div class="p-2">
+        <div class="close-button">
+            <div class="m-2">
+                <i class="fas fa-times p-2" (click)="slider('vacation')"></i>
+            </div>
+        </div>
+        <div class="slider-body m-2">
+            <div class="title">
+                Vacaciones
+            </div>
+            <div class="mx-3">
+                <div class="vacancy-info mt-2 d-flex align-items-center">
+                    <div>
+                        <span>Vacaciones Disponibles: </span>
+                        <span class="ms-1">21</span>
+                    </div>
+                    <div class="ms-2">
+                        <span>Dias Disponibles: </span>
+                        <span class="ms-1">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white  slider close profile-details">
+    <div class="p-2">
+        <div class="close-button">
+            <div class="m-2">
+                <i class="fas fa-times p-2" (click)="slider('profile-details')"></i>
+            </div>
+        </div>
+        <div class="slider-body m-2">
+            <div class="title">
+                Detalles del Perfil
+            </div>
+
+        </div>
+    </div>
+</div>

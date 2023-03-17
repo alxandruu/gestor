@@ -1,0 +1,38 @@
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME CONTENT */
+.app-content {
+    position: absolute;
+    min-height: 100vh;
+    width: calc(100% - 78px);
+    left: 78px;
+    transition: all 0.5s ease;
+}
+.app-content .text {
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin: 12px;
+}
+app-nav.active ~ .app-content {
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.breadcumb {
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    .bread {
+        color: #1d1b31;
+        text-transform: capitalize;
+        text-decoration: none;
+        &:hover {
+            border-bottom: 2px dotted #1d1b31;
+        }
+    }
+}

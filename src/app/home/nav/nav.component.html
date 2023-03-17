@@ -1,0 +1,76 @@
+<div class="sidebar">
+    <div class="logo_content">
+        <div class="clock non-selectable">
+            {{time}}
+        </div>
+        <i class='bx bx-menu' id="btn" (click)="expandNav()"></i>
+    </div>
+    <ul class="nav_list">
+        <div class="non-selectable">
+
+
+            <!-- <li>
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Buscar...">
+            <span class="tooltip">Buscar</span>
+        </li>  -->
+            <li>
+                <a [routerLink]="['/employee']">
+                    <i class="fas fa-home"></i>
+                    <span class="links_name">Portal Empleado</span>
+                </a>
+                <span class="tooltip">P. Empleado</span>
+            </li>
+            <li>
+                <a [routerLink]="['/sign']">
+
+                    <i class="far fa-clock"></i>
+                    <span class="links_name">Fichar</span>
+                </a>
+                <span class="tooltip">Fichar</span>
+            </li>
+            <li>
+                <a [routerLink]="['/messages']">
+                    <i class="far fa-comments"></i>
+                    <span class="links_name">Mensajes</span>
+                </a>
+                <span class="tooltip">Mensajes</span>
+            </li>
+            <li>
+                <a [routerLink]="['/projects']">
+                    <i class="far fa-folder-open"></i>
+                    <span class="links_name">Proyectos</span>
+                </a>
+                <span class="tooltip">Proyectos</span>
+            </li>
+            <li>
+                <a [routerLink]="['/informs']">
+                    <i class="far fa-file-alt"></i>
+                    <span class="links_name">Informes</span>
+                </a>
+                <span class="tooltip">Informes</span>
+            </li>
+            <li>
+                <a [routerLink]="['/settings']">
+                    <i class="fas fa-cog"></i>
+                    <span class="links_name">Ajustes</span>
+                </a>
+                <span class="tooltip">Ajustes</span>
+            </li>
+        </div>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <!-- <img src="assets/profile.jpg" alt=""> -->
+                    <div class="name_job">
+                        <div class="name">Gabriel Alexandru Botas</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out" (click)='logout()' [routerLink]="['/login']"></i>
+            </div>
+        </div>
+
+    </ul>
+
+</div>
